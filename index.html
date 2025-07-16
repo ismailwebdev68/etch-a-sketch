@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Etch-a-Sketch</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="main">
+            <div id="cpanel">
+                <div>
+                    <input type="number" id="grid_input" placeholder="Enter Grid Size: (10-50)"/>
+                </div>
+                <button id="gen_but" class="button-24 green">Generate</button>
+                <button onclick="enableEraser()" class="button-24 green">Erase</button>
+                <button onclick="enablePen()" class="button-24 green">Pen</button>
+                <button onclick="clearGrid()" class="button-24 clear">Clear</button>
+            </div>
+            <div class="canvas" id="canvas"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
